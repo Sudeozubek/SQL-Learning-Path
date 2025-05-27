@@ -101,4 +101,18 @@ JOIN Course c ON d.DepartmentId = c.DepartmentId
 GROUP BY d.Name;
 
 -- Show the number of students each instructor is teaching. List instructor's first name, last name, and the number of students.
+ALTER TABLE Course
+ADD InstructorId INT;
+
+UPDATE Course SET InstructorId = 3 WHERE CourseId = 101; -- SQL Basics
+UPDATE Course SET InstructorId = 3 WHERE CourseId = 102; -- Java
+UPDATE Course SET InstructorId = 4 WHERE CourseId = 103; -- Artificial Intelligence
+
+SELECT p.FirstName, p.LastName, COUNT(sg.StudentId) AS NumberOfStudents
+FROM Course c
+JOIN Person p ON c.InstructorId= p.PersonId
+JOIN StudentGrade sg on c.CourseId = sg.CourseId
+WHERE p.Discriminator = 'Instructor'
+GROUP BY p.FirstName, p.LastName;
+
 
