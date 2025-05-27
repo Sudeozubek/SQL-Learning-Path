@@ -4,7 +4,7 @@ Welcome to my SQL learning journey
 
 This repository contains all the fundamental and advanced SQL queries I’ve written while learning how to work with relational databases. From `SELECT` basics to `JOIN`, `GROUP BY`, `HAVING`, and even `TRIGGER` examples — it’s all here!
 
-## 💻 What’s inside?
+## What’s inside?
 - Table creation scripts (CREATE TABLE)
 - Data insertion examples (INSERT INTO)
 - Query practice with real-world scenarios
