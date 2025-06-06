@@ -11,7 +11,7 @@ CREATE TABLE Department (
                             Name NVARCHAR(50)
 );
 
--- 2. Person tablosu
+-- 2. Person tablosu 
 CREATE TABLE Person (
                         PersonId INT PRIMARY KEY AUTO_INCREMENT,
                         FirstName NVARCHAR(50),
