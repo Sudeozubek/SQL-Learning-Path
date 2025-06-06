@@ -15,7 +15,7 @@ CREATE TABLE Department (
 CREATE TABLE Person (
                         PersonId INT PRIMARY KEY AUTO_INCREMENT,
                         FirstName NVARCHAR(50),
-                        LastName NVARCHAR(50), 
+                        LastName NVARCHAR(50),
                         Discriminator NVARCHAR(20)
 );
 
